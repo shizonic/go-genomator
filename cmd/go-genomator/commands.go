@@ -3,16 +3,25 @@ package main
 import (
 	"fmt"
 
+	"github.com/shizonic/go-genomator"
 	"github.com/urfave/cli"
 )
 
 var commands = []cli.Command{
 	{
-		Name:    "add",
-		Aliases: []string{"a"},
-		Usage:   "add a task to the list",
+		Name:    "list",
+		Aliases: []string{"l"},
+		Usage:   "List available recipes",
 		Action: func(c *cli.Context) error {
-			fmt.Println("added task: ", c.Args().First())
+			return nil
+		},
+	},
+	{
+		Name:    "run",
+		Aliases: []string{"r"},
+		Usage:   "List available recipes",
+		Action: func(c *cli.Context) error {
+			fmt.Println(genomator.RecipesDir)
 			return nil
 		},
 	},

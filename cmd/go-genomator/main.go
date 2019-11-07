@@ -10,9 +10,11 @@ import (
 
 func main() {
 	app := cli.NewApp()
+	app.EnableBashCompletion = true
 	app.Version = versioninfo.Version
 	app.Name = versioninfo.ProjectName
 	app.Usage = versioninfo.ProjectDescription
+	app.Flags = flags
 	app.Commands = commands
 
 	err := app.Run(os.Args)

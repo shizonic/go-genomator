@@ -4,7 +4,7 @@ package versioninfo
 var ProjectName string = "Genomator"
 
 // ProjectDescription contains the description of the project
-var ProjectDescription string = "Generic geno/automator"
+var ProjectDescription string = "A generic geno/automator"
 
 // ProjectCopyright contains the copyright for the project
 var ProjectCopyright string = "shizonic"
