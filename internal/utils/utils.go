@@ -28,7 +28,7 @@ func RecipesDirectory() string {
 	}
 
 	usr, _ := user.Current()
-	filePath, _ = filepath.Abs(path.Join(usr.HomeDir, name))
+	filePath, _ = filepath.Abs(path.Join(usr.HomeDir, ".config", name))
 
 	return filePath
 }
