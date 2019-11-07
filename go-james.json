@@ -1,10 +1,10 @@
 {
     "project": {
-        "name": "go-genomator",
+        "name": "gen",
         "version": "1.0.0",
         "description": "",
         "copyright": "",
-        "main_package": "github.com/shizonic/go-genomator/cmd/go-genomator"
+        "main_package": "github.com/shizonic/go-genomator/cmd/gen"
     },
     "build": {
         "ouput_path": "build",
