@@ -1,13 +1,13 @@
 package versioninfo
 
 // ProjectName contains the name of the project
-var ProjectName string = "go-genomator"
+var ProjectName string = "Genomator"
 
 // ProjectDescription contains the description of the project
-var ProjectDescription string = "go-genomator"
+var ProjectDescription string = "Generic geno/automator"
 
 // ProjectCopyright contains the copyright for the project
-var ProjectCopyright string = ""
+var ProjectCopyright string = "shizonic"
 
 // Version contains the version of the app
 var Version string = "1.0.0"

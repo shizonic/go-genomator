@@ -3,7 +3,7 @@
     "tasks": [
         {
             "label": "go-genomator | build",
-            "command": "go-james build -v",
+            "command": "go-james build -v --output build/genomator",
             "type": "shell",
             "group": "build",
             "problemMatcher": [
@@ -12,7 +12,7 @@
         },
         {
             "label": "go-genomator | build darwin/amd64",
-            "command": "go-james build -v --goos=darwin --goarch=amd64",
+            "command": "go-james build -v --output build/genomator --goos=darwin --goarch=amd64",
             "type": "shell",
             "group": "build",
             "problemMatcher": [
@@ -21,7 +21,7 @@
         },
         {
             "label": "go-genomator | build linux/amd64",
-            "command": "go-james build -v --goos=linux --goarch=amd64",
+            "command": "go-james build -v --output build/genomator --goos=linux --goarch=amd64",
             "type": "shell",
             "group": "build",
             "problemMatcher": [
@@ -30,7 +30,7 @@
         },
         {
             "label": "go-genomator | build windows/amd64",
-            "command": "go-james build -v --goos=windows --goarch=amd64",
+            "command": "go-james build -v --output build/genomator --goos=windows --goarch=amd64",
             "type": "shell",
             "group": "build",
             "problemMatcher": [
