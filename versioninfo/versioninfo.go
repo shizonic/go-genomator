@@ -16,4 +16,4 @@ var Version string = "1.0.0"
 var Revision string = "head"
 
 // Branch will be injected with the current branch name
-var Branch string = "master"
+var Branch string = "develop"
