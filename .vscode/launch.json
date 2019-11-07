@@ -2,15 +2,16 @@
     "Version": "2.0.0",
     "configurations": [
         {
-            "name": "Debug Executable",
+            "name": "Debug List Command",
             "type": "go",
             "request": "launch",
             "mode": "auto",
-            "program": "${workspaceFolder}/cmd/go-genomator",
+            "program": "${workspaceFolder}/cmd/gen",
             "env": {},
             "args": [
+                "list",
                 "--directory",
-                "test_dir"
+                "../test/testdata"
             ]
         }
     ]

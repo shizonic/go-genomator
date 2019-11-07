@@ -1,0 +1,10 @@
+{
+    "name": "test",
+    "source": "https://github.com/golang-standards/project-layout",
+    "tasks": [
+        {
+            "kind": "script",
+            "file": "check.sh"
+        }
+    ]
+}

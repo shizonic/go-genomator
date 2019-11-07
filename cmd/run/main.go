@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/shizonic/go-genomator/internal/helpers"
+	"github.com/shizonic/go-genomator/internal/utils"
 	"github.com/tucnak/climax"
 )
 
@@ -38,7 +38,7 @@ var RunCmd = climax.Command{
 		}
 
 		if _, ok := ctx.Get("directory"); !ok {
-			directory = helpers.RecipesDirectory()
+			directory = utils.RecipesDirectory()
 		}
 
 		fmt.Println(recipe, directory)
