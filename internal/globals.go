@@ -1,3 +1,3 @@
-package genomator
+package internal
 
 var RecipesDir string

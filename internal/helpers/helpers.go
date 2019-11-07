@@ -1,4 +1,4 @@
-package genomator
+package helpers
 
 import (
 	"os"
@@ -6,6 +6,7 @@ import (
 	"path"
 	"strings"
 
+	"github.com/shizonic/go-genomator/internal"
 	"github.com/shizonic/go-genomator/versioninfo"
 )
 
@@ -27,7 +28,7 @@ func GetRecipesDir() string {
 }
 
 func PrepareEnviron() {
-	if !DirExist(RecipesDir) {
-		os.MkdirAll(RecipesDir, 0644)
+	if !DirExist(internal.RecipesDir) {
+		os.MkdirAll(internal.RecipesDir, 0644)
 	}
 }

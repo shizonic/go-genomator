@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/shizonic/go-genomator"
+	"github.com/shizonic/go-genomator/internal"
 	"github.com/urfave/cli"
 )
 
@@ -21,7 +21,7 @@ var commands = []cli.Command{
 		Aliases: []string{"r"},
 		Usage:   "List available recipes",
 		Action: func(c *cli.Context) error {
-			fmt.Println(genomator.RecipesDir)
+			fmt.Println(internal.RecipesDir)
 			return nil
 		},
 	},
